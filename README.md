@@ -52,6 +52,8 @@ message is msg1
 message is msg2
 ```
 
+Pay attention that init with true param should be only called once - and it should start before any other producers-consumers since it inits the shm objects.
+
 ## Contributing
 
 1. Fork it (<https://github.com/galtet/lua-shared-queue/fork>)
